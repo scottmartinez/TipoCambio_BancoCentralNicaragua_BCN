@@ -253,6 +253,8 @@ namespace ConsumoTC
         private void XfrmTipoCambio_Load(object sender,EventArgs e)
         {
             radioGroup1.SelectedIndex = 1;
+            dt_desde.DateTime = DateTime.Now.AddMonths(-1);
+            dt_hasta.DateTime = DateTime.Now;
             dt_fecha.DateTime = DateTime.Now;
         }
         private void btn_Consultar_Click(object sender,EventArgs e)
